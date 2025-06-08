@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DEMO_v3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="partner">
+    <Key>
+      <PropertyRef Name="partner_ID" />
+    </Key>
+    <Property Name="partner_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="type" Type="Byte" />
+    <NavigationProperty Name="partners_products" Relationship="Self.FK_partners_products_partners" FromRole="partners" ToRole="partners_products" />
+  </EntityType>
+  <EntityType Name="partners_products">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="partner_ID" Type="Int32" />
+    <Property Name="product_ID" Type="Int32" />
+    <Property Name="quantity" Type="Int32" />
+    <NavigationProperty Name="partner" Relationship="Self.FK_partners_products_partners" FromRole="partners_products" ToRole="partners" />
+    <NavigationProperty Name="product" Relationship="Self.FK_partners_products_products" FromRole="partners_products" ToRole="products" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="product_ID" />
+    </Key>
+    <Property Name="product_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="partners_products" Relationship="Self.FK_partners_products_products" FromRole="products" ToRole="partners_products" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_partners_products_partners">
+    <End Role="partners" Type="Self.partner" Multiplicity="0..1" />
+    <End Role="partners_products" Type="Self.partners_products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="partners">
+        <PropertyRef Name="partner_ID" />
+      </Principal>
+      <Dependent Role="partners_products">
+        <PropertyRef Name="partner_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_partners_products_products">
+    <End Role="products" Type="Self.product" Multiplicity="0..1" />
+    <End Role="partners_products" Type="Self.partners_products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="product_ID" />
+      </Principal>
+      <Dependent Role="partners_products">
+        <PropertyRef Name="product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DEMO_v3Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="partners" EntityType="Self.partner" />
+    <EntitySet Name="partners_products" EntityType="Self.partners_products" />
+    <EntitySet Name="products" EntityType="Self.product" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <AssociationSet Name="FK_partners_products_partners" Association="Self.FK_partners_products_partners">
+      <End Role="partners" EntitySet="partners" />
+      <End Role="partners_products" EntitySet="partners_products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_partners_products_products" Association="Self.FK_partners_products_products">
+      <End Role="products" EntitySet="products" />
+      <End Role="partners_products" EntitySet="partners_products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

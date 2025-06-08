@@ -1,0 +1,31 @@
+﻿<Window x:Class="DEMO4.menuWIndow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DEMO4"
+        mc:Ignorable="d"
+        Title="menuWIndow" Height="246" Width="514">
+    <Grid Margin="0,0,10,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="65*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="170" Margin="10,47,0,0" VerticalAlignment="Top" Width="226" Source="/vlcsnap-2025-02-10-19h55m15s705.png" Grid.RowSpan="2">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </Image>
+        <StackPanel VerticalAlignment="Top" Margin="185,86,0,0" Grid.RowSpan="2" Height="115">
+            <Button x:Name="partnersButton" Content="Партнёры" Click="partnersButton_Click"/>
+            <Button x:Name="exitButton" Content="Выход" Margin="0,50,0,0" Click="exitButton_Click"/>
+
+        </StackPanel>
+    </Grid>
+
+</Window>

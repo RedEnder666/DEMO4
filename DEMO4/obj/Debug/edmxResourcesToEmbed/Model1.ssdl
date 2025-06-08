@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DEMO_v3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="partners">
+    <Key>
+      <PropertyRef Name="partner_ID" />
+    </Key>
+    <Property Name="partner_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="255" />
+    <Property Name="phone" Type="varchar" MaxLength="20" />
+    <Property Name="type" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="partners_products">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="partner_ID" Type="int" />
+    <Property Name="product_ID" Type="int" />
+    <Property Name="quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="product_ID" />
+    </Key>
+    <Property Name="product_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="10" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK_partners_products_partners">
+    <End Role="partners" Type="Self.partners" Multiplicity="0..1" />
+    <End Role="partners_products" Type="Self.partners_products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="partners">
+        <PropertyRef Name="partner_ID" />
+      </Principal>
+      <Dependent Role="partners_products">
+        <PropertyRef Name="partner_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_partners_products_products">
+    <End Role="products" Type="Self.products" Multiplicity="0..1" />
+    <End Role="partners_products" Type="Self.partners_products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="product_ID" />
+      </Principal>
+      <Dependent Role="partners_products">
+        <PropertyRef Name="product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DEMO_v3ModelStoreContainer">
+    <EntitySet Name="partners" EntityType="Self.partners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="partners_products" EntityType="Self.partners_products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="products" EntityType="Self.products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_partners_products_partners" Association="Self.FK_partners_products_partners">
+      <End Role="partners" EntitySet="partners" />
+      <End Role="partners_products" EntitySet="partners_products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_partners_products_products" Association="Self.FK_partners_products_products">
+      <End Role="products" EntitySet="products" />
+      <End Role="partners_products" EntitySet="partners_products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
