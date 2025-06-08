@@ -7,31 +7,35 @@
       "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\partnerswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|c:\\users\\jekap\\source\\repos\\demo4\\demo4\\utils\\costcalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|c:\\users\\jekap\\source\\repos\\demo4\\demo4\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|C:\\Users\\jekap\\source\\repos\\DEMO4\\demo4\\utils\\costcalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\utils\\costcalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|c:\\users\\jekap\\source\\repos\\demo4\\demo4\\partnerswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|C:\\Users\\jekap\\source\\repos\\DEMO4\\demo4\\partnerswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\partnerswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|c:\\users\\jekap\\source\\repos\\demo4\\demo4\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|C:\\Users\\jekap\\source\\repos\\DEMO4\\demo4\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|c:\\users\\jekap\\source\\repos\\demo4\\demo4\\menuwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|C:\\Users\\jekap\\source\\repos\\DEMO4\\demo4\\menuwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\menuwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|c:\\users\\jekap\\source\\repos\\demo4\\demo4\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|C:\\Users\\jekap\\source\\repos\\DEMO4\\demo4\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|c:\\users\\jekap\\source\\repos\\demo4\\demo4\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|C:\\Users\\jekap\\source\\repos\\DEMO4\\demo4\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|c:\\users\\jekap\\source\\repos\\demo4\\demo4\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|C:\\Users\\jekap\\source\\repos\\DEMO4\\demo4\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{DE85A2E2-E235-4A67-99BA-2789A38C1325}|DEMO4\\DEMO4.csproj|solutionrelative:demo4\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
@@ -52,7 +56,7 @@
               "RelativeDocumentMoniker": "DEMO4\\partnersWIndow.xaml.cs",
               "ToolTip": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\partnersWIndow.xaml.cs",
               "RelativeToolTip": "DEMO4\\partnersWIndow.xaml.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAjwIQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAwwNsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T14:53:52.103Z",
               "IsPinned": true,
@@ -60,19 +64,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\App.xaml",
+              "RelativeDocumentMoniker": "DEMO4\\App.xaml",
+              "ToolTip": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\App.xaml",
+              "RelativeToolTip": "DEMO4\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T21:10:50.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "partnersWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\partnersWindow.xaml",
               "RelativeDocumentMoniker": "DEMO4\\partnersWindow.xaml",
               "ToolTip": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\partnersWindow.xaml",
               "RelativeToolTip": "DEMO4\\partnersWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-08T14:21:43.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T14:21:43.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CostCalc.cs",
               "DocumentMoniker": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\Utils\\CostCalc.cs",
               "RelativeDocumentMoniker": "DEMO4\\Utils\\CostCalc.cs",
@@ -80,12 +95,11 @@
               "RelativeToolTip": "DEMO4\\Utils\\CostCalc.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T10:41:58.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T10:41:58.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "menuWIndow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\menuWIndow.xaml.cs",
               "RelativeDocumentMoniker": "DEMO4\\menuWIndow.xaml.cs",
@@ -93,48 +107,44 @@
               "RelativeToolTip": "DEMO4\\menuWIndow.xaml.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T10:24:56.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T10:24:56.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "menuWIndow.xaml",
               "DocumentMoniker": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\menuWIndow.xaml",
               "RelativeDocumentMoniker": "DEMO4\\menuWIndow.xaml",
               "ToolTip": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\menuWIndow.xaml",
               "RelativeToolTip": "DEMO4\\menuWIndow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-08T10:17:40.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T10:17:40.103Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Model1.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\Model1.edmx",
               "RelativeDocumentMoniker": "DEMO4\\Model1.edmx",
               "ToolTip": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\Model1.edmx [Diagram1]",
               "RelativeToolTip": "DEMO4\\Model1.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-06-08T10:13:35.091Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2025-06-08T10:13:35.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\MainWindow.xaml",
               "RelativeDocumentMoniker": "DEMO4\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\MainWindow.xaml",
               "RelativeToolTip": "DEMO4\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-08T10:07:14.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T10:07:14.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jekap\\source\\repos\\DEMO4\\DEMO4\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "DEMO4\\MainWindow.xaml.cs",
@@ -142,8 +152,7 @@
               "RelativeToolTip": "DEMO4\\MainWindow.xaml.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAIwC8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T10:07:13.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T10:07:13.378Z"
             }
           ]
         },

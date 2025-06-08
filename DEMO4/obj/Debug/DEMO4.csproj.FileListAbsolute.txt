@@ -23,3 +23,4 @@ C:\Users\jekap\source\repos\DEMO4\DEMO4\obj\Debug\menuWIndow.g.cs
 C:\Users\jekap\source\repos\DEMO4\DEMO4\obj\Debug\menuWIndow.baml
 C:\Users\jekap\source\repos\DEMO4\DEMO4\obj\Debug\partnersWindow.g.cs
 C:\Users\jekap\source\repos\DEMO4\DEMO4\obj\Debug\partnersWindow.baml
+C:\Users\jekap\source\repos\DEMO4\DEMO4\obj\Debug\App.baml
