@@ -11,7 +11,7 @@
         <TextBox x:Name="loginBox" TextWrapping="Wrap" Text=""/>
         <Label Content="Пароль"/>
         <PasswordBox x:Name="passwordBox"/>
-        <Button x:Name="loginButton" Content="Вход" Margin="0,18,0,0" Click="Button_Click"/>
+        <Button x:Name="loginButton" Content="Вход" Margin="0,18,0,0" Click="Button_Click" />
         <Button x:Name="exitButton" Content="Выход" Margin="0,18,0,0" Click="exitButton_Click"/>
 
     </StackPanel>

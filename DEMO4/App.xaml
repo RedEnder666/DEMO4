@@ -1,33 +1,60 @@
 ﻿<Application x:Class="DEMO4.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DEMO4"
              StartupUri="MainWindow.xaml">
+    <Application.Resources>
 
+        <!-- ################################################################ -->
+        <!-- ОФИЦИАЛЬНЫЙ КНОПОЧНЫЙ СТИЛЬ (ГОСТ 2009, ИЗБЕЖАНИЕ КРУГЛОСТЕЙ) -->
+        <!-- Работает даже в Excel 2003. Оттенок серого прошёл проверку МЧС -->
+        <!-- ################################################################ -->
+        <Style TargetType="Button">
+            <!-- Основные параметры -->
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="#FFD6D6D6"/>
+            <!-- Ярко-серый, как таблицы в старом Word -->
+            <Setter Property="BorderBrush" Value="#FF404040"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Padding" Value="4 2"/>
+            <Setter Property="Cursor" Value="Arrow"/>
+            <!-- Никакой "руки". Только строгость -->
 
-<Application.Resources>
-    <Style x:Key="ModernButtonStyle" TargetType="Button">
-        <Setter Property="Background" Value="#FF3D3D3D"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="Padding" Value="10 5"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Cursor" Value="Hand"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}" 
-                            CornerRadius="4">
-                        <ContentPresenter HorizontalAlignment="Center" 
-                                          VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#FF5D5D5D"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-</Application.Resources>
+            <!-- Прямоугольный шаблон без прикрас -->
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1">
+                            <ContentPresenter 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <!-- Суровые реакции на взаимодействие -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFBFBFBF"/>
+                    <!-- Чуть темнее при наведении -->
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#FFA0A0A0"/>
+                    <!-- Ещё темнее при нажатии -->
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Opacity" Value="0.5"/>
+                    <!-- Полупрозрачная при отключении -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Application.Resources>
 </Application>
