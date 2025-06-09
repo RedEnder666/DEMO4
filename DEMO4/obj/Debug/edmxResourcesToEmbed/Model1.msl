@@ -45,6 +45,7 @@
     <EntitySetMapping Name="users">
       <EntityTypeMapping TypeName="DEMO_v3Model.user">
         <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="role" ColumnName="role" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="login" ColumnName="login" />
           <ScalarProperty Name="password" ColumnName="password" />

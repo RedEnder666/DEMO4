@@ -48,6 +48,7 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="login" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
     <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="role" Type="Byte" />
   </EntityType>
   <Association Name="FK_partners_products_partners">
     <End Role="partners" Type="Self.partner" Multiplicity="0..1" />

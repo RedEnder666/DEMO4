@@ -44,9 +44,12 @@
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="login" Type="nvarchar" MaxLength="10" />
     <Property Name="password" Type="nvarchar" MaxLength="255" />
+    <Property Name="role" Type="tinyint" />
   </EntityType>
   <Association Name="FK_partners_products_partners">
-    <End Role="partners" Type="Self.partners" Multiplicity="0..1" />
+    <End Role="partners" Type="Self.partners" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="partners_products" Type="Self.partners_products" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="partners">

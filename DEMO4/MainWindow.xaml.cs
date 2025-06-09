@@ -18,6 +18,14 @@ namespace DEMO4
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    public static class UserSession
+    {
+        public static int UserId { get; set; }
+        public static string Login { get; set; }
+        public static byte Role { get; set; } // 0 = admin, 1 = regular user, etc.
+    }
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -41,6 +49,11 @@ namespace DEMO4
                     }
                     else
                     {
+                        // Store user information in session
+                        UserSession.UserId = user.id;
+                        UserSession.Login = user.login;
+                        UserSession.Role = (byte)user.role;
+
                         var menu = new menuWIndow();
                         menu.Show();
                         this.Close();
@@ -50,7 +63,6 @@ namespace DEMO4
                 {
                     MessageBox.Show("Пользователь не найден");
                 }
-
             }
         }
 
