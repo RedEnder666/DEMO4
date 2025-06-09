@@ -3,7 +3,8 @@ CREATE TABLE partners (
     name NVARCHAR(100) COLLATE Cyrillic_General_CI_AS NOT NULL,
     address NVARCHAR(510) COLLATE Cyrillic_General_CI_AS NOT NULL,
     phone VARCHAR(20) COLLATE Cyrillic_General_CI_AS,
-    type TINYINT NOT NULL CHECK (type BETWEEN 0 AND 3) -- Assuming 0–3 are valid types
+    type TINYINT NOT NULL CHECK (type BETWEEN 0 AND 3),
+    rating INT NOT NULL CHECK (rating > 0) -- Ensures rating is always > 0
 );
 
 CREATE TABLE products (
